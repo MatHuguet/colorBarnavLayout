@@ -5,13 +5,14 @@
 }
 
 body {
-    background-color:rgb(255, 242, 198);
+    background-color:rgb(240, 248, 234);
 }
 
 a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
-    color: rgb(255, 242, 198);;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(240, 248, 234);
     text-decoration: none;
 
 }
@@ -25,7 +26,7 @@ p {
 
 
 .header-container {
-    margin-top: 2rem;
+    margin: 4rem 0;
     display: flex;
 
 }
@@ -44,24 +45,22 @@ p {
 .desc-section {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 25%;
+    width: 20%;
     position: relative;
-    position: 0;
 }
 
 .desc-item {
-    padding-left: 6rem;
-    padding-top: 2.1rem;
-    padding-bottom: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     z-index: 6;
-    text-align: right;
+    flex-grow: 1;
 }
 /*=============TESTEND============ */
 .nav-item {
 
-    padding: 2rem 0;
+    padding: 3rem 0;
     padding-right: 4rem;
     position: relative;
     z-index: 6;
@@ -108,7 +107,7 @@ a:hover {
 }
 
 .home::after {
-    background-color: rgb(36, 141, 141);
+    background-color: rgb(168, 198, 134);
 }
 
 .color-bar-hover {
@@ -118,13 +117,13 @@ a:hover {
 
 
 .galery::after {
-    background-color: rgb(145, 55, 55);
+    background-color: rgb(240, 246, 110);
 }
 
 .cv::after {
-    background-color: rgb(167, 111, 43);
+    background-color: rgb(228, 87, 46);
 }
 
 .contact::after {
-    background-color: rgb(23, 23, 163);
+    background-color: rgb(157, 156, 98);
 }
