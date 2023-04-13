@@ -2,24 +2,32 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* ========== COLOR PALETTE ============================================= */
+    
+    --clr-bg : #e6e1dd;
+    --clr-orange :#c06d49;
+    --clr-grn : #899481;
+    --clr-blue : #304f6d;
+    --clr-ylw : #cab179;
+    --ft-clr1 : #efedea;
 }
 
 body {
-    background-color:rgb(240, 248, 234);
+    background-color: var(--clr-bg);
 }
 
 a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
-    color: rgb(240, 248, 234);
+    color: var(--ft-clr1);
     text-decoration: none;
 
 }
 
 p {
     user-select: none;
-    color: rgb(255, 242, 198);
+    color: var(--clr-bg);
     position: relative;
     z-index: 10;
 }
@@ -57,6 +65,7 @@ p {
     z-index: 6;
     flex-grow: 1;
 }
+
 /*=============TESTEND============ */
 .nav-item {
 
@@ -67,7 +76,10 @@ p {
     text-align: right;
 }
 
-.home::after, .galery::after, .contact::after, .cv::after {
+.home::after,
+.galery::after,
+.contact::after,
+.cv::after {
     width: 200%;
     height: 100%;
     position: absolute;
@@ -77,9 +89,9 @@ p {
     transition: .6s ease;
 }
 
-.home:hover::after, 
-.galery:hover::after, 
-.contact:hover::after, 
+.home:hover::after,
+.galery:hover::after,
+.contact:hover::after,
 .cv:hover::after {
     width: 200%;
     height: 100%;
@@ -107,7 +119,7 @@ a:hover {
 }
 
 .home::after {
-    background-color: rgb(168, 198, 134);
+    background-color: var(--clr-blue);
 }
 
 .color-bar-hover {
@@ -117,13 +129,13 @@ a:hover {
 
 
 .galery::after {
-    background-color: rgb(240, 246, 110);
+    background-color: var(--clr-ylw);
 }
 
 .cv::after {
-    background-color: rgb(228, 87, 46);
+    background-color: var(--clr-orange);
 }
 
 .contact::after {
-    background-color: rgb(157, 156, 98);
+    background-color: var(--clr-grn);
 }
